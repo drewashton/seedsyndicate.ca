@@ -39,14 +39,17 @@ header nav {
 }
 
 header .logo {
-  width: 165px;
+  width: 200px;
+  position: center;
 }
 
 header .logo svg {
   max-width: 100%;
   height: auto;
+  position: center;
   -o-object-fit: cover;
      object-fit: cover;
+
 }
 
 header .social-icon a {
@@ -160,6 +163,7 @@ header .social-icon a:hover {
   }
   header .logo {
     width: 140px;
+    position: center;
   }
   .newsletter-area {
     padding-top: 150px;
@@ -202,6 +206,7 @@ header .social-icon a:hover {
   }
   header .logo {
     width: 150px;
+    position: center;
   }
   .newsletter-area {
     padding-top: 150px;
@@ -244,6 +249,7 @@ header .social-icon a:hover {
   }
   header .logo {
     width: 160px;
+    position: center;
   }
   .newsletter-area {
     padding-top: 150px;
