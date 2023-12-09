@@ -17,7 +17,6 @@
 }
 
 .image-container {
-  margin-top: 25px;
   margin-bottom: 30px;
   display: flex;
   flex-direction: column;
@@ -47,10 +46,16 @@
   text-align: center; /* Center-align the image and button */
 }
 
-.img-fluid {
+.img-fluidb {
   max-width: 100%;
   height: auto;
-  padding-bottom: 10px;
+  margin-bottom: 10px;
+}
+
+.img-fluida {
+  max-width: 100%;
+  height: auto;
+  padding-bottom: 70px;
 }
 
 .img-one {
