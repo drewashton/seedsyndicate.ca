@@ -48,25 +48,26 @@
                     <div class="col-lg-8">
                         <h5 class="has-line">Coming Soon</h5>
                         <h1>Get Notified When We Launch.</h1>
-                    	<p>Introducing fintech startup Seed Syndicate, a social-centric crowdfunding platform. Our platform  merges crowdfunding with interactive, community-driven elements of social networks. Users can showcase projects, display "seedlings," crowdfund, share strategies, and connect with like-minded innovators. It's more than just a fundraising hub; it's a dynamic space where creators and backers unite, fostering a supportive ecosystem for project success. Join us in redefining the future of crowdfunding and be part of a community nurturing innovation, collaboration, and shared success.</p>
+                        <form method="post" action="https://script.google.com/macros/s/your-web-app-id/exec">
+                            <input type="hidden" class="form-control" placeholder="First name" name="firstname-empty">
+
+                            <div class="form-group">
+                               <input type="email" name="email" placeholder="Enter your email" required>
+
+                               <!-- if these hidden inputs are filled then ignore, robots -->
+
+                               <input type="text" class="form-control d-none" placeholder="Subject" name="contact-form">
+
+                               <input type="text" class="form-control d-none" placeholder="Subject" name="subject-empty">
+
+                               <input type="text" class="form-control visually-hidden" placeholder="Last name" name="lastname-empty" tabindex="-1">
+
+                               <button type="submit">Notify Me</button>
+                           </div>
+                         </form>
+                    	<p>Introducing fintech startup Seed Syndicate, a social-centric crowdfunding platform. Our platform  merges crowdfunding with interactive, community-driven elements of social networks. Users can showcase projects, display seedlings, crowdfund, share strategies, and connect with like-minded innovators. It's more than just a fundraising hub; it's a dynamic space where creators and backers unite, fostering a supportive ecosystem for project success. Join us in redefining the future of crowdfunding and be part of a community nurturing innovation, collaboration, and shared success.</p>
 											
-							<form method="post" action="https://script.google.com/macros/s/your-web-app-id/exec">
-							   <input type="hidden" class="form-control" placeholder="First name" name="firstname-empty">
-
-							   <div class="form-group">
-								  <input type="email" name="email" placeholder="Enter your email" required>
-
-								  <!-- if these hidden inputs are filled then ignore, robots -->
-
-								  <input type="text" class="form-control d-none" placeholder="Subject" name="contact-form">
-
-								  <input type="text" class="form-control d-none" placeholder="Subject" name="subject-empty">
-
-								  <input type="text" class="form-control visually-hidden" placeholder="Last name" name="lastname-empty" tabindex="-1">
-
-								  <button type="submit">Notify Me</button>
-							  </div>
-							</form>                        
+							                        
 						</div>
                     </div>
                 </div>
@@ -78,11 +79,28 @@
         <!-- Only Mobile View Starts Here -->
         <section class="xs-bg d-md-none d-lg-none">
             <img src="bg2.7.png" alt="img" class="img-fluid w-100">
-        
-                <p class="foot">&copy; 2023 Seed Syndicate. All rights reserved.<br>A project by <a href="https://dashdigital.ca" target="_blank">Dash Digital</a><br>Direct inquires to <a href="mailto:contact@dashdigital.ca">contact@dashdigital.ca</a></p>
-        
-        </section>
+            
+            <div class="image-container">
+                <div class="image-item">
+                    <img src="invest.png" alt="Image 1" class="img-fluid">
+                    <a href="mailto:drew@dashdigital.ca" class="btn">Contact</a>
+                </div>
+                <div class="image-item">
+                    <img src="join.png" alt="Image 2" class="img-fluid">
+                    <a href="mailto:apply@dashdigital.ca" class="btn">Apply</a>
+                </div>
+                <div class="image-item">
+                    <img src="prop.png" alt="Image 3" class="img-fluid">
+                    <button class="btn">View</button>
+                </div>
+            </div>
+            <img src="bot1.png" alt="img" class="img-one full-width">
+        <section class="foot">
+        <p>&copy; 2023 Seed Syndicate. All rights reserved.<br>A project by <a href="https://dashdigital.ca" target="_blank">Dash Digital</a><br>Direst inquires to <a href="mailto:contact@dashdigital.ca">contact@dashdigital.ca</a></p>
+        <img src="logbg.png" alt="img" class="slogo">
+
         <!-- Only Mobile View Ends Here -->
+    </section>
     </section>
 
 </body>
