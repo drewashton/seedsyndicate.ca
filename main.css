@@ -28,12 +28,12 @@ body {
 footer {
   background-color: #fff;
   padding-bottom: 10px;
-  padding-top: 100px;
+  padding-top: 0px;
   text-align: center;
 }
 
 footer p {
-  padding-top: 50px;
+  padding-top: 150px;
   color:#6dbcb0;
   font-size: 14px;
   font-weight: medium;
