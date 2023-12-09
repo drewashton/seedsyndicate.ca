@@ -1,3 +1,4 @@
+
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 .main {
   height: 100vh;
@@ -23,7 +24,23 @@ body {
   padding: 0;
   position: relative;
   min-height: 100vh;
+  animation: swipeIn 1s ease-out;
 }
+
+
+@keyframes swipeIn {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+
+
 
 .foot {
   text-align: center;
@@ -68,6 +85,7 @@ header .logo {
   position: center;
   
 }
+
 
 /* Define the pulse animation */
 @keyframes pulse {
@@ -171,6 +189,30 @@ header .social-icon a:hover {
   position: absolute;
   top: 0;
   right: 145px;
+  animation: pulseOne 1s ease-in-out infinite;
+}
+
+@keyframes pulseOne {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.04);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
 }
 
 @media (max-width: 420px) {
@@ -364,6 +406,7 @@ body {
 h1,
 h5 {
   color: #0d2733;
+  animation: zoomIn 1.2s ease-out;
 }
 
 h1 {
