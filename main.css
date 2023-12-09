@@ -1,4 +1,3 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
 .main {
   height: 100vh;
@@ -17,6 +16,72 @@
   background-repeat: no-repeat;
 }
 
+.image-container {
+  margin-top: 25px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 50px; /* Adjust the padding as needed */
+  box-sizing: border-box; /* Include padding in the width */
+  animation: floatAnimation 2s ease-in-out infinite;
+}
+
+@keyframes floatAnimation {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-5px);
+  }
+}
+
+.full-width {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.image-item {
+  margin-bottom: 20px; /* Adjust as needed */
+  text-align: center; /* Center-align the image and button */
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 10px
+}
+
+.img-one {
+  max-width: 100%;
+  height: auto;
+}
+.slogo {
+  width: 55px;
+  background-color: #0F2A35;
+  align-items: center;
+}
+
+
+.btn {
+  padding: 7.5px 15px; /* Adjust the padding to make the button smaller */
+  background-color: #007bff; /* Example button color */
+  color: #fff; /* Example text color */
+  border: none;
+  cursor: pointer;
+  border: 1px solid #6dbcb0;
+  border-radius: 40px;
+  background-color: #6dbcb0;
+  color: #0d2733;
+  font-weight: 500;
+  top: 0;
+  right: 145px;
+  animation: pulseOne 1s ease-in-out infinite;
+
+}
+
+
 
 body {
   
@@ -27,6 +92,11 @@ body {
   animation: swipeIn 1s ease-out;
 }
 
+
+form {
+padding-top: -10px;
+padding-bottom: 30px;
+}
 
 @keyframes swipeIn {
   from {
@@ -44,14 +114,14 @@ h1 {
   text-shadow: 1px 1px 1px rgba(109, 188, 176, 1);
 }
 
-
 .foot {
+  padding-top: 25px;
   text-align: center;
-  color:#0d2733;
+  color:#ffffff;
   font-size: 13px;
   font-weight: medium;
-  padding-top: 25px;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
+  background-color: #0F2A35;
 }
 
 
@@ -186,7 +256,7 @@ header .social-icon a:hover {
   border: 1px solid #6dbcb0;
   border-radius: 40px;
   background-color: #6dbcb0;
-  color: #fff;
+  color: #0d2733;
   font-size: 20px;
   font-weight: 500;
   position: absolute;
@@ -343,7 +413,7 @@ header .social-icon a:hover {
   }
   .newsletter-area {
     padding-top: 150px;
-    margin-bottom: 50px;
+    padding-bottom: 0px;
   }
 }
 
