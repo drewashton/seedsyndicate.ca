@@ -18,10 +18,30 @@
   <meta name="keywords" content="Drew Ashton, fintech, crowdfunding, investing, finance">
 
     <title>Seed Syndicate - Crowdfunding Social Platform</title>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const zoomItems = document.querySelectorAll('.zoom-item');
+
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('zoom-in');
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            zoomItems.forEach(item => {
+                observer.observe(item);
+            });
+        });
+    </script>
+
+
 </head>
 
 <body>
-    <section class="main" style="background-image: url(images/bg.jpg);">
+    <section class="main">
         <!-- Header Starts Here -->
         <header class="container">
             <nav>
@@ -40,15 +60,19 @@
             </nav>
         </header>
         <!-- Header Ends Here -->
+        <div class="image-section d-sm-none d-md-none d-lg-none">
+            <img src="banner.jpg" alt="Image">
+        </div>
 
         <!-- News Letter Starts Here -->
         <section class="newsletter-area">
+        
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8">
                         <h4 class="has-line">Coming Soon</h4>
                         <h1>Get Notified When We Launch.</h1>
-                        <form method="post" action="https://script.google.com/macros/s/your-web-app-id/exec">
+                        <form method="post" action="https://script.google.com/macros/s/AKfycbwj5swfq8lvJUoL1yYDkFZF42igwPCntxKOxSUvIck8/dev">
                             <input type="hidden" class="form-control" placeholder="First name" name="firstname-empty">
 
                             <div class="form-group">
@@ -81,22 +105,22 @@
             <img src="bg2.7.png" alt="img" class="img-fluida w-100">
             
             <div class="image-container">
-                <div class="image-item">
+                <div class="image-item zoom-item">
                     <img src="invest.png" alt="Image 1" class="img-fluidb">
                     <a href="mailto:drew@dashdigital.ca" class="btn">Contact</a>
                 </div>
-                <div class="image-item">
+                <div class="image-item zoom-item">
                     <img src="join.png" alt="Image 2" class="img-fluidb">
                     <a href="mailto:apply@dashdigital.ca" class="btn">Apply</a>
                 </div>
-                <div class="image-item">
+                <div class="image-item zoom-item">
                     <img src="prop.png" alt="Image 3" class="img-fluidb">
                     <button class="btn">View</button>
                 </div>
             </div>
             <img src="bot1.png" alt="img" class="img-one full-width">
         <section class="foot">
-        <p>&copy; 2023 Seed Syndicate. All rights reserved.<br>A project by <a href="https://dashdigital.ca" target="_blank">Dash Digital</a><br>Direct inquiries to <a href="mailto:contact@dashdigital.ca">contact@dashdigital.ca</a></p>
+        <p>&copy; 2023 Seed Syndicate. All rights reserved.<br>A project by <a href="https://dashdigital.ca" target="_blank">Dash Digital</a><br>Direct inquires to <a href="mailto:contact@dashdigital.ca">contact@dashdigital.ca</a></p>
         <img src="logbg.png" alt="img" class="slogo">
 
         <!-- Only Mobile View Ends Here -->
