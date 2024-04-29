@@ -17,6 +17,28 @@
 }
 
 
+
+@media (min-width: 768px) {
+  body {
+    background-color: white;
+  }
+  header, section, footer, .video-background {
+    display: none;
+  }
+}
+
+/* --------------------------------------------------------------------------------------------------------------- */
+
+@media (max-width: 767px) {
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+
 /* Custom CSS */
 
 .zoom-item {
